@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="DoublyLinkedList.js"></script>
+</head>
+<body>
+
+<h2>Doubly Linked List</h2>
+<script type="text/javascript">
+/**
+ * Main
+ */
+var dll0 = new DoublyLinkedList();
+console.log(dll0.toString());
+console.log(dll0.getSize());
+dll0.addRec(1);
+console.log(dll0.toString());
+console.log(dll0.getSize());
+dll0.addRec(2);
+console.log(dll0.toString());
+console.log(dll0.getSize());
+dll0.remove(0);
+console.log(dll0.toString());
+console.log(dll0.getSize());
+dll0.remove(0);
+console.log(dll0.toString());
+console.log(dll0.getSize());
+console.log("\n\n");
+
+var dll = new DoublyLinkedList();
+console.log("size : " + dll.size);
+dll.insertAt(0, -2);
+console.log(dll.toString());
+dll.insertAt(0, -3);
+dll.insertAt(1, -4);
+console.log(dll.toString());
+console.log(dll.getSize());
+dll.add(1);
+console.log(dll.toString());
+dll.add(2);
+console.log(dll.toString());
+console.log("size : " + dll.size);
+dll.add(3);
+dll.add(4);
+dll.add(5);
+console.log(dll.toString());
+console.log("size : " + dll.getSize());
+console.log("head : " + dll.head.info); // head : 
+console.log("head.next.next : " + dll.head.next.next.info); // head.nex.next : 
+console.log("head.next.next.prev : " + dll.head.next.next.prev.info); // head.nex.next.prev : 
+console.log(dll.toString()); //
+dll.insertAt(4, 9);
+console.log(dll.toString());
+console.log(dll.getSize());
+dll.addRec(95);
+console.log(dll.toString());
+console.log(dll.getSize());	
+</script>
+
+</body>
+</html>
